@@ -396,7 +396,7 @@ document.onclick = function (e) {
     } else {
       e = e
       var target = e.target;
-      if (target != presentacionlightbox && target != flechalightizq && target != lightizq && target != lightder  && target != flechalightder) {
+      if (target != flechalightizq && target != lightizq && target != lightder  && target != flechalightder) {
         window.onscroll = null;
         cuerpo.classList.remove('blur');
         contenedorlightbox.classList.remove('active');
