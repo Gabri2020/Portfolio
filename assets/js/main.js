@@ -411,6 +411,7 @@ document.onclick = function (e) {
         contenedorlightbox.classList.remove('active');
         truepresentacion = false;
         llave = false;
+        preload.style.opacity = 1;
       }
     }    
   }  
