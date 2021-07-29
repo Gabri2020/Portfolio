@@ -294,7 +294,7 @@ const preload = document.getElementById('spinner');
 
 presentacionlightbox.addEventListener('load', function(){
   preload.style.opacity = 0;
-  preload.style.visibility = 'hidden';
+  // preload.style.visibility = 'hidden';
 })
 
 fotopresentacion.addEventListener('click', (e) => {
@@ -374,6 +374,7 @@ flechalightizq.addEventListener('click', () => {
     dataURL5 = "images/" + fotoURL5;
   }
   fotoslightbox.src = dataURL5;
+  preload.style.opacity = 1;
 });
 
 flechalightder.addEventListener('click', () => {
@@ -392,7 +393,8 @@ flechalightder.addEventListener('click', () => {
     fotoURL6 = fotonro + dataURL6;
     dataURL6 = "images/" + fotoURL6;
   }
-  fotoslightbox.src = dataURL6;      
+  fotoslightbox.src = dataURL6;
+  preload.style.opacity = 1;      
 });
 
 document.onclick = function (e) {
