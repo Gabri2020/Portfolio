@@ -290,6 +290,12 @@ const flechalightizq = document.getElementById('lightbox-izq');
 const flechalightder = document.getElementById('lightbox-der');
 const fotoslightbox = document.querySelector('.lightbox-img');
 const presentacionlightbox = document.getElementById('lightboxpresentacion');
+const preload = document.getElementById('spinner');
+
+presentacionlightbox.addEventListener('load', function(){
+  preload.style.opacity = 0;
+  preload.style.visibility = 'hidden';
+})
 
 fotopresentacion.addEventListener('click', (e) => {
   var sorry = e.currentTarget;
@@ -301,7 +307,7 @@ fotopresentacion.addEventListener('click', (e) => {
   fotoslightbox.src = dataURL11;
   window.onscroll = function(){ window.scrollTo(x, y) };
   cuerpo.classList.add('blur');
-  truepresentacion = true;
+  truepresentacion = true; 
 })
 
 flechaizq.addEventListener('click', () => {
@@ -396,6 +402,7 @@ document.onclick = function (e) {
     } else {
       e = e
       var target = e.target;
+      // if (target != presentacionlightbox && target != flechalightizq && target != lightizq && target != lightder  && target != flechalightder) {
       if (target != flechalightizq && target != lightizq && target != lightder  && target != flechalightder) {
         window.onscroll = null;
         cuerpo.classList.remove('blur');
