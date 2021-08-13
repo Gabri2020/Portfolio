@@ -389,7 +389,7 @@ header {
 }*/
 
 @font-face {
-	font-family: Blacksword;
+	font-family:Blacksword;
 	src: url("fonts/Blacksword.eot");
 	src: url("fonts/Blacksword.eot?#iefix") format("embedded-opentype"),
 	     url("fonts/Blacksword.woff") format("woff"),
