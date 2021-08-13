@@ -383,9 +383,18 @@ header {
     padding-left: 2em;
 }
 
-@font-face {
+/* @font-face {
     font-family:Blacksword;
     src: url(Letra2.otf);
+}*/
+
+@font-face {
+	font-family: "Blacksword";
+	src: url("fonts/Blacksword.eot");
+	src: url("fonts/Blacksword.eot?#iefix") format("embedded-opentype"),
+	     url("fonts/Blacksword.woff") format("woff"),
+	     url("fonts/Blacksword.ttf") format("truetype"),
+	     url("fonts/Blacksword.svg#kimberley") format("svg");
 }
 
 .degradado-azul {
