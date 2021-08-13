@@ -383,19 +383,19 @@ header {
     padding-left: 2em;
 }
 
-/* @font-face {
-    font-family:Blacksword;
-    src: url(Letra2.otf);
-}*/
-
 @font-face {
+    font-family: Blacksword;
+    src: url(Letra2.otf);
+}
+
+/* @font-face {
     font-family: Blacksword;
 	src: url("Letra2.otf");
 	src: url("Letra2.otf?#iefix") format("embedded-opentype"),
 	     url("Letra2.woff") format("woff"),
 	     url("Letra2.ttf") format("truetype"),
 	     url("Letra2.svg#kimberley") format("svg");
-}
+}*/
 
 .degradado-azul {
     background: rgb(0,212,255);
