@@ -23,7 +23,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 #FOTOS, #PORTAFOLIO, #HABILIDADES {
-    min-height: 800px;
+    /* min-height: 800px; */
+    min-height: 100vh;
     margin: 0px;
     padding: 70px 0px 0px 0px;
     box-sizing: border-box;
@@ -275,7 +276,7 @@ header {
     top: 0px;
     bottom: 0px;
     right: 0px;
-    padding: calc(100vh*0.25) 10px 0px;
+    padding: calc(100vh*0.2) 10px 0px;
     width: min(75vw, 400px);
     height: 100vh;
     outline: 0px;
@@ -349,7 +350,8 @@ header {
 
 /* COPA DEL MUNDO */
 #YO {
-    min-height: 690px;
+    /* min-height: 690px; */
+    min-height: 100vh;
     padding-top: 70px;
     box-sizing: border-box;
     display:flex; 
@@ -383,19 +385,20 @@ header {
     padding-left: 2em;
 }
 
-@font-face {
-    font-family: Blacksword;
-    src: url(Letra2.otf);
-}
-
 /* @font-face {
-    font-family: Blacksword;
-	src: url("Letra2.otf");
-	src: url("Letra2.otf?#iefix") format("embedded-opentype"),
-	     url("Letra2.woff") format("woff"),
-	     url("Letra2.ttf") format("truetype"),
-	     url("Letra2.svg#kimberley") format("svg");
-}*/
+    font-family:Blacksword;
+    src: url(Letra2.otf);
+} */
+
+@font-face {
+    font-family: 'blackswordregular';
+    src: url('../fonts/letra2-webfont.eot');
+    src: url('../fonts/letra2-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/letra2-webfont.woff2') format('woff2'),
+        url('../fonts/letra2-webfont.woff') format('woff'),
+        url('../fonts/letra2-webfont.ttf') format('truetype'),
+        url('../fonts/letra2-webfont.svg#blackswordregular') format('svg');
+}
 
 .degradado-azul {
     background: rgb(0,212,255);
@@ -408,7 +411,7 @@ header {
 }
 
 #FRASE {
-    font-family: Blacksword;
+    font-family: 'blackswordregular', sans-serif;
     font-size: 33px;
     text-align: center;
     padding: .5em;
@@ -868,6 +871,10 @@ header {
 } /*fin de media 767px*/
 
 @media (max-width: 752px) {
+    #FOTOS, #PORTAFOLIO, #HABILIDADES {
+        min-height: auto;
+    }
+
     header {
         border: none;
     }
@@ -926,10 +933,6 @@ header {
 }/*fin de media 752px*/
 
 @media all and (max-width: 575px) {
-    #FOTOS, #PORTAFOLIO, #HABILIDADES {
-        min-height: auto;
-    }
-
     .containerpad100 {
         padding: 0px;
     }
