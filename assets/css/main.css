@@ -871,7 +871,7 @@ header {
 } /*fin de media 767px*/
 
 @media (max-width: 752px) {
-    #FOTOS, #PORTAFOLIO, #HABILIDADES {
+    #YO, #FOTOS, #PORTAFOLIO, #HABILIDADES {
         min-height: auto;
     }
 
