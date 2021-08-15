@@ -351,7 +351,7 @@ header {
 /* COPA DEL MUNDO */
 #YO {
     /* min-height: 690px; */
-    min-height: 100vh;
+    min-height: calc(100vh * 0.9);
     padding-top: 70px;
     box-sizing: border-box;
     display:flex; 
@@ -401,12 +401,12 @@ header {
 }
 
 .degradado-azul {
-    background: rgb(0,212,255);
+    /* background: rgb(0,212,255); */
     background: linear-gradient(rgba(2,0,36,1) 0%,rgba(9,9,121,1) 25%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 75%, rgba(2,0,36,1) 100%);
-    /* background: linear-gradient(60deg, rgba(0,212,255,1) 20%, rgba(9,9,121,1) 80%, rgba(2,0,36,1) 100%); */
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    /* background: linear-gradient(60deg, rgba(0,212,255,1) 20%, rgba(9,9,121,1) 80%, rgba(2,0,36,1) 100%); */
     /* -webkit-text-stroke: 0.5px #ffffff; */
 }
 
@@ -416,7 +416,6 @@ header {
     text-align: center;
     padding: .5em;
     box-sizing: border-box;
-    background-color: rgb(0,212,255);
 }
 
 /* CARRUSEL */
@@ -872,7 +871,7 @@ header {
 } /*fin de media 767px*/
 
 @media (max-width: 752px) {
-    #YO, #FOTOS, #PORTAFOLIO, #HABILIDADES {
+    #FOTOS, #PORTAFOLIO, #HABILIDADES {
         min-height: auto;
     }
 
@@ -929,6 +928,12 @@ header {
 
     .contenedor-principal .flecha-izquierda, .contenedor-principal .flecha-derecha {
         display: none;
+    }
+
+    .degradado-azul {
+        background: none;
+        -webkit-text-fill-color: #ffffff;
+        color: #ffffff;
     }
 
 }/*fin de media 752px*/
