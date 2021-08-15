@@ -932,8 +932,8 @@ header {
 
     .degradado-azul {
         background: none;
-        -webkit-text-fill-color: #ffffff;
-        color: #ffffff;
+        -webkit-text-fill-color: #00d4ff;
+        color: #00d4ff;
     }
 
 }/*fin de media 752px*/
