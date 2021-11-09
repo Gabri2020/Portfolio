@@ -48,9 +48,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .mostrarabajo {
-    -moz-animation: spinner 1s infinite linear !important;
-	-webkit-animation: spinner 1s infinite linear !important;
-	-ms-animation: spinner 1s infinite linear !important;
+    -moz-animation: down 1s !important;
+	-webkit-animation: down 1s !important;
+	-ms-animation: down 1s !important;
     animation: down 1s !important;
 }
 
@@ -64,9 +64,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .mostrararriba {
-    -moz-animation: spinner 1s infinite linear !important;
-	-webkit-animation: spinner 1s infinite linear !important;
-	-ms-animation: spinner 1s infinite linear !important;
+    -moz-animation: up 1s !important;
+	-webkit-animation: up 1s !important;
+	-ms-animation: up 1s !important;
     animation: up 1s !important;
 }
 
@@ -383,6 +383,38 @@ header {
     font-weight: bolder;
     box-sizing: border-box;
     padding-left: 2em;
+}
+
+#diploma {
+    border: 2px solid #ffffff;
+    -moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-size: 20px;
+    /* font-family: 'calibri';
+    color: #ffffff;
+    font-weight: bolder; */
+    /*text-decoration: none; sin subrayado link*/
+    text-align: center;
+    /* padding: 12px 30px; */
+    -moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#texto_diploma {
+    color: #ffffff;
+}
+
+#diploma:hover{
+    background: rgb(0,212,255);
+    background: radial-gradient(circle, rgba(0,212,255,1) 10%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
+    border-radius: 15px;
+    /* padding: 12px 25px; */
 }
 
 /* @font-face {
@@ -757,9 +789,9 @@ header {
         height: 69px;
     }
 
-    /* .skillref {
-        display:block;
-    } */
+    .degradado-azul {
+        text-align: center;
+    }
 
     .img_pie {
         height: 6vw;
