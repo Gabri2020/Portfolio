@@ -291,10 +291,7 @@ document.onclick = function (e) {
 // PORTAFOLIO
 
 // FIN PORTAFOLIO
-const urlproyecto = document.getElementById('linkproyecto1');
-urlproyecto.addEventListener('click', () => {
-  alert("This project is in the process of remodeling.\nEste proyecto esta en proceso de remodelación. ")
-})
+
 //HABILIDADES
 
 photoskill.forEach((img_skill) =>{
