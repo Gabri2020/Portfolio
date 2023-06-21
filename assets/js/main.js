@@ -20,7 +20,7 @@ if (dispositivo == "mobile" || dispositivo == "tablet") {
     dataURL = dataURL.replace("white.svg",".svg");
     photoskill[i].src = dataURL;
   }
-}
+};
 //FIN DETECTAR SI ES MOBIL O TABLET
 
 //EFECTO SCROLL
@@ -48,7 +48,7 @@ function mostrartop(){
     animacion[k].classList.add('mostrararriba');
   }
   i = k;
-}
+};
 
 function mostrarscroll() {
   var scrolltop = document.documentElement.scrollTop;
@@ -71,131 +71,44 @@ function mostrarscroll() {
       animacion[j].classList.add('mostrararriba'); 
     } 
   }
-}
+};
 
 window.addEventListener('load', mostrartop);
 window.addEventListener('scroll',mostrarscroll);
 //FIN SCROLL
 
-// Codigo para las particulas
-particlesJS (
-  {
-    "particles": {
-      "number": {
-        "value": 300,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#00d4ff"
-      },
-      "shape": {
-        "type": "circle",
-        "stroke": {
-          "width": 0,
-          "color": "#090979"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 1,
-        "random": true,
-        "anim": {
-          "enable": true,
-          "speed": 0.3,
-          "opacity_min": 0,
-          "sync": true
-        }
-      },
-      "size": {
-        "value": 8,
-        "random": true,
-        "anim": {
-          "enable": true,
-          "speed": 4,
-          "size_min": 0.3,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": false,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 1,
-        "direction": "top",
-        "random": true,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 600
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": false,
-          "mode": "bubble"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 250,
-          "size": 0,
-          "duration": 2,
-          "opacity": 0,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  }
-);
-// Fin Particulas
 // CAMBIO DE IDIOMA
-const idiomaElemento = document.getElementById("encabezadoIdioma");
-
+const textoCambiar = document.querySelectorAll('[data-section]');
+const idiomaElemento = document.getElementById('encabezadoIdioma');
+const idiomaPlegableElemento = document.getElementById('plegableIdioma');
+const changeLanguage = async language => {
+  const requestJson = await fetch(`./assets/json/${language}.json`); //localizo en carpeta JSON
+  const textJson = await requestJson.json(); //transforma en objeto para usarlo en JS
+  for (const textoCambiarSeleccionado of textoCambiar) {
+    const section = textoCambiarSeleccionado.dataset.section; //selecciono el data-section del portafolio
+    const value = textoCambiarSeleccionado.dataset.value; //selecciono el data-value del portafolio
+    textoCambiarSeleccionado.innerHTML = textJson[section][value]; //cambio por el que esta en JSON
+  }
+};
+const changeDataLanguage = (languageDate) => {
+  switch (languageDate.target.dataset.language) {
+    case 'en':
+      changeLanguage(languageDate.target.dataset.language);
+      idiomaElemento.dataset.language ='es';
+      idiomaPlegableElemento.dataset.language = 'es';
+      break;
+    case "es":
+      changeLanguage(languageDate.target.dataset.language);
+      idiomaElemento.dataset.language ='en';
+      idiomaPlegableElemento.dataset.language ='en';
+      break;
+  }
+}
 idiomaElemento.addEventListener("click", (e) => {
-  console.log(e.target.dataset.language);
+  changeDataLanguage(e);
+});
+idiomaPlegableElemento.addEventListener("click", (e) => { 
+  changeDataLanguage(e);
 });
 // FIN DE CAMBIO DE IDIOMA
 // Look for .hamburger
@@ -327,4 +240,120 @@ photoskill.forEach((img_skill) =>{
   })    
 });
 // FIN HABILIDADES
+
+// Codigo para las particulas
+particlesJS (
+  {
+    "particles": {
+      "number": {
+        "value": 300,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#00d4ff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#090979"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 1,
+        "random": true,
+        "anim": {
+          "enable": true,
+          "speed": 0.3,
+          "opacity_min": 0,
+          "sync": true
+        }
+      },
+      "size": {
+        "value": 8,
+        "random": true,
+        "anim": {
+          "enable": true,
+          "speed": 4,
+          "size_min": 0.3,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 1,
+        "direction": "top",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 600
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": false,
+          "mode": "bubble"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 250,
+          "size": 0,
+          "duration": 2,
+          "opacity": 0,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  }
+);
+// Fin Particulas
+
 

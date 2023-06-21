@@ -22,7 +22,7 @@
                 <div class="content-border1">
                     <nav>
                         <ul>
-                            <li><a href="#CUERPO">INICIO</a></li>
+                            <li><a href="#CUERPO" data-section="encabezado" data-value="inicio">INICIO</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -31,7 +31,7 @@
                 <div class="content-border1">
                     <nav>
                         <ul>
-                            <li><a href="#SOBRE-MI">SERVICIOS</a></li>
+                            <li><a href="#SOBRE-MI" data-section="encabezado" data-value="servicios">SERVICIOS</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -40,7 +40,7 @@
                 <div class="content-border1">
                     <nav>
                         <ul>
-                            <li><a href="#PORTAFOLIO">PROYECTOS</a></li>
+                            <li><a href="#PORTAFOLIO" data-section="encabezado" data-value="proyectos">PROYECTOS</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -49,7 +49,7 @@
                 <div class="content-border1">
                     <nav>
                         <ul>
-                            <li><a href="#HABILIDADES">TECNOLOGIAS</a></li>
+                            <li><a href="#HABILIDADES" data-section="encabezado" data-value="tecnologias">TECNOLOGIAS</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -58,7 +58,7 @@
                 <div class="content-border1">
                     <nav>
                         <ul>
-                            <li><a href="#PIE_PAGINA">CONTACTO</a></li>
+                            <li><a href="#PIE_PAGINA" data-section="encabezado" data-value="contacto">CONTACTO</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -67,7 +67,7 @@
                 <div class="content-border1">
                     <nav>
                         <ul>
-                            <li><a id="encabezadoIdioma" data-language="en" href="#IDIOMA">ENGLISH</a></li>
+                            <li><a id="encabezadoIdioma" data-language="en" href="#IDIOMA" data-section="encabezado" data-value="idioma">ENGLISH</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -79,12 +79,12 @@
                     </span>
                 </button>
                 <aside class="columna-hamburguesa columna-invisible">
-                    <a class="button-hamburguesa" href="#CUERPO">Inicio</a>
-                    <a class="button-hamburguesa" href="#SOBRE-MI">Servicios</a>
-                    <a class="button-hamburguesa" href="#PORTAFOLIO">Proyectos</a>
-                    <a class="button-hamburguesa" href="#HABILIDADES">Tecnologias</a>
-                    <a class="button-hamburguesa" href="#PIE_PAGINA">Contacto</a>
-                    <a class="button-hamburguesa">Versión Inglés</a>
+                    <a class="button-hamburguesa" href="#CUERPO" data-section="menuDesplegable" data-value="inicioPlegable">Inicio</a>
+                    <a class="button-hamburguesa" href="#SOBRE-MI" data-section="menuDesplegable" data-value="serviciosPlegable">Servicios</a>
+                    <a class="button-hamburguesa" href="#PORTAFOLIO" data-section="menuDesplegable" data-value="proyectosPlegable">Proyectos</a>
+                    <a class="button-hamburguesa" href="#HABILIDADES" data-section="menuDesplegable" data-value="tecnologiasPlegable">Tecnologias</a>
+                    <a class="button-hamburguesa" href="#PIE_PAGINA" data-section="menuDesplegable" data-value="contactoPlegable">Contacto</a>
+                    <a id="plegableIdioma" class="button-hamburguesa" data-language="en" data-section="menuDesplegable" data-value="idiomaPlegable">Versión Inglés</a>
                 </aside>
             </div>
         </header>
@@ -94,13 +94,13 @@
                     <span><img loading="lazy" src="images/img00.png" class="img_circ" alt="Luis Gabriel Aleman"></span>
                 </div>
                 <div class="col-xl-9 col-md-8 col-sm-7 col-12 degradado-azul animado" id="SOY_YO">
-                    <h1><strong>Luis Gabriel Aleman</strong>.<br><br>Desarrollador Web Freelance</h1>
+                    <h1 data-section="titulo" data-value="rol"><strong>Luis Gabriel Aleman</strong>.<br><br>Desarrollador Web Freelance</h1>
                     <a id="diploma" href="https://alemanportafolio.000webhostapp.com/Diploma/DiplomatureWebFullStack.pdf" target="_blank"  rel="noopener noreferrer">
                         <!-- <svg>
                             <text id="texto_diploma">See Diploma</text>
                         </svg> -->
                         <svg width="138" height="50">
-                            <text x="13" y="35" fill="white" style="font-family:'calibri'; font-size:20px; font-weight: bolder;">VER DIPLOMA</text>
+                            <text x="13" y="35" fill="white" style="font-family:'calibri'; font-size:20px; font-weight: bolder;" data-section="titulo" data-value="linkTitulo">VER DIPLOMA</text>
                         </svg>
                     </a>
                 </div>
@@ -108,44 +108,44 @@
                     <a id="diploma" href="https://www.elearning-total.com/campus/verificar_certificado.php" target="_blank">Diploma</a>
                 </div> -->
                 <div class="col-sm-12 degradado-azul col-12 animado" id="FRASE">
-                    <h2>"No hay nada noble en ser superior a los otros hombres; La Nobleza es ser superior a tu previo yo."</h2>
+                    <h2 data-section="titulo" data-value="frase">"No hay nada noble en ser superior a los otros hombres; La Nobleza es ser superior a tu previo yo."</h2>
                 </div>
             </div>
         </section>
         <section id="SOBRE-MI">
             <div class="containertitulo degradado-azul">
-                <h2>SERVICIOS</h2>
+                <h2 data-section="servicios" data-value="tituloServicios">SERVICIOS</h2>
             </div>
             <div class = "contenedor-SOBRE-MI" id="MODULO2">
                 <div class="col-xl-3 col-md-4 col-sm-5 col-12 animado" id="PERFIL">
                     <span><img loading="lazy" src="images/img01.jpg" class="img_about_me" alt="Luis Gabriel Aleman"></span>
                 </div>
                 <div class="col-xl-9 col-md-8 col-sm-7 col-12 animado blanco">
-                    <p>Como programador web independiente, estoy aquí para ayudarte a crear una presencia en línea sólida y efectiva. Ya sea que necesites una página web personal, un blog, un sitio web para tu negocio o cualquier otro proyecto relacionado con la web, puedo ofrecerte soluciones a medida que se ajusten a tus necesidades. A continuación, encontrarás una descripción de los servicios que incluyo:</p>
+                    <p data-section="servicios" data-value="descripcionServicios1">Como programador web independiente, estoy aquí para ayudarte a crear una presencia en línea sólida y efectiva. Ya sea que necesites una página web personal, un blog, un sitio web para tu negocio o cualquier otro proyecto relacionado con la web, puedo ofrecerte soluciones a medida que se ajusten a tus necesidades. A continuación, encontrarás una descripción de los servicios que incluyo:</p>
                     <ul>
-                        <li>Dominio (.com.ar o .com).</li>
-                        <li>Alojamiento del sitio web.</li>
-                        <li>Certificado SSL (seguridad).</li>
-                        <li>Optimización y posicionamiento en buscadores (SEO) para aumentar la visibilidad en la web.</li>
-                        <li>Diseño adaptativo para ser visualizado en ordenadores, tabletas y celulares.</li>
-                        <li>WhatsApp integrado.</li>
-                        <li>Mapa de ubicación.</li>
-                        <li>Formulario de contacto.</li>
+                        <li data-section="servicios" data-value="lista1">Dominio (.com.ar o .com).</li>
+                        <li data-section="servicios" data-value="lista2">Alojamiento del sitio web.</li>
+                        <li data-section="servicios" data-value="lista3">Certificado SSL (seguridad).</li>
+                        <li data-section="servicios" data-value="lista4">Optimización y posicionamiento en buscadores (SEO) para aumentar la visibilidad en la web.</li>
+                        <li data-section="servicios" data-value="lista5">Diseño adaptativo para ser visualizado en ordenadores, tabletas y celulares.</li>
+                        <li data-section="servicios" data-value="lista6">WhatsApp integrado.</li>
+                        <li data-section="servicios" data-value="lista7">Mapa de ubicación.</li>
+                        <li data-section="servicios" data-value="lista8">Formulario de contacto.</li>
                     </ul>
-                    <p>También ofrezco el servicio de mantenimiento web (en caso de solicitarlo) para garantizar el buen funcionamiento y seguridad de tu sitio web; como por ejemplo actualizar el sistema, hacer alguna modificación o simplemente cargar contenido.</p>
+                    <p data-section="servicios" data-value="descripcionServicios2">También ofrezco el servicio de mantenimiento web (en caso de solicitarlo) para garantizar el buen funcionamiento y seguridad de tu sitio web; como por ejemplo actualizar el sistema, hacer alguna modificación o simplemente cargar contenido.</p>
                 </div>
             </div>
         </section>
         <section id="PORTAFOLIO">
             <div class="containertitulo degradado-azul">
-                <h2>PROYECTOS</h2>
+                <h2 data-section="proyectos" data-value="tituloProyecto">PROYECTOS</h2>
             </div>
             <div class="containerpad100">         
                 <div class="animado col-md-6 col-xl-4 borde-padding">
                     <div class="caja_proy">
                         <img loading="lazy" src="images/Cerati.png" class="img_proy"/>
-                        <h3 class="blanco top0 titulo_proy">DISCOGRAFIA GUSTAVO ADRIAN CERATI</h3>
-                        <p class="blanco top0 parrafo_proy">Página dedicada a hacer un breve resumen de la etapa solista del músico Gustavo Adrián Cerati. Así mismo, tú puedes encontrar información extra.</p>
+                        <h3 class="blanco top0 titulo_proy" data-section="proyectos" data-value="subtituloProyecto1">DISCOGRAFIA GUSTAVO ADRIAN CERATI</h3>
+                        <p class="blanco top0 parrafo_proy" data-section="proyectos" data-value="descripcionProyecto1">Página dedicada a hacer un breve resumen de la etapa solista del músico Gustavo Adrián Cerati. Así mismo, tú puedes encontrar información extra.</p>
                         <nav id="LINKS">
                             <ul class="outpoint">
                                 <li>
@@ -160,7 +160,7 @@
         </section>
         <section id="HABILIDADES">
                 <div class="containertitulo degradado-azul">
-                    <h2>TECNOLOGIAS</h2>
+                    <h2 data-section="habilidad" data-value="tituloTecnologia">TECNOLOGIAS</h2>
                 </div>
                 <div class="containerpad100">
                     <div class="animado col-xxl-3 col-xl-4 col-lg-3 col-md-4 col-sm-6 col-6 bordado" style="padding-top: 20px; padding-bottom: 20px;">
@@ -239,7 +239,7 @@
         </section>
         <footer id="PIE_PAGINA">
             <div class="containertitulo degradado-azul">
-                <h2>CONTACTO</h2>
+                <h2 data-section="contacto" data-value="tituloContacto">CONTACTO</h2>
             </div>
             <div class="caja_pie">
                 <img class="margen20 img_pie animado" src="images/correo.png">
@@ -254,7 +254,7 @@
                 </a>
             </div>
             <div class="caja_pie">
-                <h5 style="text-align: center;" class="blanco animado">Portafolio actualizandose desde 2021.</h5>
+                <h5 style="text-align: center;" class="blanco animado" data-section="contacto" data-value="descripcionContacto">Portafolio actualizandose desde 2021.</h5>
             </div>
         </footer>
         <div id="sfc6s44fhwyuxjfe99zxf6ez3tdmabmarhp"></div><script type="text/javascript" src="https://counter7.stat.ovh/private/counter.js?c=6s44fhwyuxjfe99zxf6ez3tdmabmarhp&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas"><img src="https://counter7.stat.ovh/private/contadorvisitasgratis.php?c=6s44fhwyuxjfe99zxf6ez3tdmabmarhp" border="0" title="contador de visitas" alt="contador de visitas"></a></noscript>
