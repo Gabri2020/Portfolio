@@ -1,0 +1,48 @@
+{
+    "encabezado": {
+        "inicio": "TOP",
+        "servicios": "SERVICES",
+        "proyectos": "PROYECTS",
+        "tecnologias": "SKILLS",
+        "contacto": "CONTACT",
+        "idioma": "ESPAÑOL"
+    },
+    "menuDesplegable": {
+        "inicioPlegable": "Top",
+        "serviciosPlegable": "services",
+        "proyectosPlegable": "Proyects",
+        "tecnologiasPlegable": "Skills",
+        "contactoPlegable": "Contact",
+        "idiomaPlegable": "Spanish Version"
+    },
+    "titulo": {
+        "rol": "<strong>Luis Gabriel Aleman</strong>.<br><br>Web Developer Freelance",
+        "linkTitulo": "SEE DIPLOMA",
+        "frase": "There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self."
+    },
+    "servicios": {
+        "tituloServicios": "SERVICES",
+        "descripcionServicios1": "As a freelance web developer, I'm here to help you create a strong and effective online presence. Whether you need a personal website, blog, business website, or any other web-related project, I can provide tailor-made solutions to meet your needs. Below, you will find a description of the services that I include:",
+        "lista1": "Domain (.com.ar or .com).",
+        "lista2": "Web hosting",
+        "lista3": "SSL certificate (security).",
+        "lista4": "Search engine optimization and positioning (SEO) to increase visibility on the web.",
+        "lista5": "Adaptive design to be viewed on computers, tablets and cell phones.",
+        "lista6": "WhatsApp integrated.",
+        "lista7": "Location map.",
+        "lista8": "Contact Form.",
+        "descripcionServicios2": "I also offer the web maintenance service (if you want) to ensure the proper functioning and security of your website; such as updating the system, making some modification or simply uploading content."
+    },
+    "proyectos": {
+        "tituloProyecto": "PROYECTS",
+        "subtituloProyecto1": "DISCOPRAPHY GUSTAVO ADRIAN CERATI",
+        "descripcionProyecto1": "Page dedicated to making a brief summary of the soloist stage of the musician Gustavo Adrián Cerati. Likewise, you can find some extras."
+    },
+    "habilidad": {
+        "tituloTecnologia": "SKILLS"
+    },
+    "contacto": {
+        "tituloContacto": "CONTACT",
+        "descripcionContacto": "Portfolio updating from 2021."
+    }
+}

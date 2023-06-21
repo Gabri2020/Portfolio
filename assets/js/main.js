@@ -191,7 +191,13 @@ particlesJS (
   }
 );
 // Fin Particulas
+// CAMBIO DE IDIOMA
+const idiomaElemento = document.getElementById("encabezadoIdioma");
 
+idiomaElemento.addEventListener("click", (e) => {
+  console.log(e.target.dataset.language);
+});
+// FIN DE CAMBIO DE IDIOMA
 // Look for .hamburger
 var hamburger = document.querySelector('.hamburger');
 var containerhamburger = document.querySelector('.columna-hamburguesa');

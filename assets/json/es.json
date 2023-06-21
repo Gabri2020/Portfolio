@@ -1,0 +1,48 @@
+{
+    "encabezado": {
+        "inicio": "INICIO",
+        "servicios": "SERVICIOS",
+        "proyectos": "PROYECTOS",
+        "tecnologias": "TECNOLOGIAS",
+        "contacto": "CONTACTO",
+        "idioma": "ENGLISH"
+    },
+    "menuDesplegable": {
+        "inicioPlegable": "Inicio",
+        "serviciosPlegable": "Servicios",
+        "proyectosPlegable": "Proyectos",
+        "tecnologiasPlegable": "Tecnologias",
+        "contactoPlegable": "Contacto",
+        "idiomaPlegable": "Versión Inglés"
+    },
+    "titulo": {
+        "rol": "<strong>Luis Gabriel Aleman</strong>.<br><br>Desarrollador Web Freelance",
+        "linkTitulo": "VER DIPLOMA",
+        "frase": "'No hay nada noble en ser superior a los otros hombres; La Nobleza es ser superior a tu previo yo.'"
+    },
+    "servicios": {
+        "tituloServicios": "SERVICIOS",
+        "descripcionServicios1": "Como programador web independiente, estoy aquí para ayudarte a crear una presencia en línea sólida y efectiva. Ya sea que necesites una página web personal, un blog, un sitio web para tu negocio o cualquier otro proyecto relacionado con la web, puedo ofrecerte soluciones a medida que se ajusten a tus necesidades. A continuación, encontrarás una descripción de los servicios que incluyo:",
+        "lista1": "Dominio (.com.ar o .com).",
+        "lista2": "Alojamiento del sitio web.",
+        "lista3": "Certificado SSL (seguridad).",
+        "lista4": "Optimización y posicionamiento en buscadores (SEO) para aumentar la visibilidad en la web.",
+        "lista5": "Diseño adaptativo para ser visualizado en ordenadores, tabletas y celulares.",
+        "lista6": "WhatsApp integrado.",
+        "lista7": "Mapa de ubicación.",
+        "lista8": "Formulario de contacto.",
+        "descripcionServicios2": "También ofrezco el servicio de mantenimiento web (en caso de solicitarlo) para garantizar el buen funcionamiento y seguridad de tu sitio web; como por ejemplo actualizar el sistema, hacer alguna modificación o simplemente cargar contenido."
+    },
+    "proyectos": {
+        "tituloProyecto": "PROYECTOS",
+        "subtituloProyecto1": "Discografía Gustavo Adrian Cerati",
+        "descripcionProyecto1": "Página dedicada a hacer un breve resumen de la etapa solista del músico Gustavo Adrián Cerati. Así mismo, tú puedes encontrar información extra."
+    },
+    "habilidad": {
+        "tituloTecnologia": "TECNOLOGIAS"
+    },
+    "contacto": {
+        "tituloContacto": "CONTACTO",
+        "descripcionContacto": "Portafolio actualizandose desde 2021."
+    }
+}
