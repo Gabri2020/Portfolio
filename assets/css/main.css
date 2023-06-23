@@ -1,6 +1,7 @@
 body{
     background-color: #000000;
-    margin: 0px;    
+    margin: 0px;
+    font-size: 16px;    
 }
 
 body::-webkit-scrollbar {
@@ -23,12 +24,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 #SOBRE-MI, #PORTAFOLIO, #HABILIDADES {
-    /* min-height: 800px; */
     min-height: 100vh;
-    margin: 0px;
-    padding: 70px 0px 0px 0px;
+    margin: 0em;
+    padding: 4.38em 0em 0em 0em;
     box-sizing: border-box;
-    /* border: 5px solid #fffb1a; */
 }
 
 .overlay {
@@ -98,14 +97,14 @@ header {
 
 .content-border0 {
     position: relative;
-    padding: 5px;
-    margin: 0px 1px;
+    padding: 0.31em;
+    margin: 0em 0.06em;
     display: flex;
     justify-content: center;
     align-items: center;
     /* background: linear-gradient(180deg, rgba(9,9,121,1) 0%, rgba(8,50,148,1) 10%, rgba(6,90,174,1) 20%, rgba(4,131,201,1) 30%, rgba(2,171,228,1) 40%, rgba(0,212,255,1) 50%, rgba(2,167,226,1) 60%, rgba(4,128,200,1) 70%, rgba(6,88,174,1) 80%, rgba(7,48,147,1) 90%, rgba(9,9,121,1) 100%);
     animation: rotateback2 1.3s linear infinite; */
-    border-radius: 5px;
+    border-radius: 0.31em;
     opacity: 0;
     -moz-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -114,10 +113,8 @@ header {
 }
 
 .content-border0 .content-border1 {
-    border: 2px solid #ffffff;
-    /* padding: 12px 0px; */
+    border: 0.13em solid #ffffff;
     height: auto;
-    /* background-color: #000000; */
     -moz-transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
@@ -126,18 +123,18 @@ header {
 
 .content-border0 .content-border1 nav ul {
     list-style-type: none;
-    padding: 0px; 
-    margin: 0px;
+    padding: 0em; 
+    margin: 0em;
 }
 
 .content-border0 .content-border1 nav ul li a{
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: 'calibri';
     color: #ffffff;
     font-weight: bolder;
     text-decoration: none; /*sin subrayado link*/
     text-align: center;
-    padding: 12px 30px;
+    padding: 0.75em 1.88em;
     -moz-transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
@@ -149,12 +146,12 @@ header {
 .content-border0 .content-border1 nav ul li a:hover{
     background: rgb(0,212,255);
     background: radial-gradient(circle, rgba(0,212,255,1) 10%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
-    border-radius: 15px;
-    padding: 12px 25px;
+    border-radius: 0.94em;
+    padding: 0.75em 1.56em;
 }
 
 .content-border0 .content-border1:hover {
-    border-radius: 15px;
+    border-radius: 0.94em;
 }
 
 /* .content-border0:hover {
@@ -289,7 +286,7 @@ header {
     top: 0px;
     bottom: 0px;
     right: 0px;
-    padding: calc(100vh*0.2) 10px 0px;
+    padding: calc(100vh*0.18) 10px 0px;
     width: min(75vw, 400px);
     height: 100vh;
     outline: 0px;
@@ -317,13 +314,15 @@ header {
 .button-hamburguesa:hover {
     color: #00d4ff;
     border-left: 5px solid #00d4ff;
-    /* border-bottom: 5px solid #00d4ff; */
-    /* background: #1f1f1f; */
 }
 
 .columna-hamburguesa nav ul li a:hover {
     color: #00d4ff;
     border-bottom: 5px solid #00d4ff;
+}
+
+#plegableIdioma {
+    cursor: pointer;
 }
 @keyframes rotateback2 {
     0% {
@@ -363,9 +362,8 @@ header {
 
 /* COPA DEL MUNDO */
 #YO {
-    /* min-height: 690px; */
     min-height: calc(100vh * 0.9);
-    padding-top: 70px;
+    padding-top: 4.38em;
     box-sizing: border-box;
     display:flex; 
     flex-wrap:inherit; 
@@ -381,6 +379,8 @@ header {
 
 #PERFIL {
     box-sizing: border-box;
+    padding: 0em 2em;
+    position: relative;
 }
 
 .img_circ {
@@ -392,42 +392,50 @@ header {
 #SOY_YO {
     line-height: 100%;
     font-family: system-ui;
-    font-size: 33px;
+    font-size: 2em;
     font-weight: bolder;
     box-sizing: border-box;
-    padding-left: 2em;
+    /* padding-left: 2em; */
 }
 
 #diploma {
-    border: 2px solid #ffffff;
+    border: 0.13em solid #ffffff;
     -moz-transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
-    font-size: 20px;
-    /* font-family: 'calibri';
-    color: #ffffff;
-    font-weight: bolder; */
-    /*text-decoration: none; sin subrayado link*/
+    font-size: 0.59em;
+    padding: 0.57em 1.88em;
     text-align: center;
-    /* padding: 12px 30px; */
     -moz-transition: all 0.5s ease;
 	-webkit-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
     transition: all 0.5s ease;
     display: inline-block;
     box-sizing: border-box;
+    text-decoration: none;     /*sin subrayado link*/
+    /* Para lograr que el texto del elemento <a> se muestre en blanco, puedes anular esas propiedades utilizando el valor initial.  */
+    /* Al utilizar initial como valor para las propiedades relacionadas con el texto y el fondo del elemento <a> */
+    color: white;
+    -webkit-text-fill-color: initial;
+    -moz-text-fill-color: initial;
+    -ms-text-fill-color: initial;
+    -webkit-background-clip: initial;
+    -moz-background-clip: initial;
+    -ms-background-clip: initial;
+    background-clip: initial;
+    margin-left: 0.25em;
 }
 
-#texto_diploma {
+#texto-diploma {
     color: #ffffff;
 }
 
 #diploma:hover{
     background: rgb(0,212,255);
     background: radial-gradient(circle, rgba(0,212,255,1) 10%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
-    border-radius: 15px;
-    /* padding: 12px 25px; */
+    border-radius: 0.94em;
+    padding: 0.57em 1.56em;
 }
 
 /* @font-face {
@@ -446,26 +454,32 @@ header {
 }
 
 .degradado-azul {
-    /* background: rgb(0,212,255); */
     background: linear-gradient(rgba(2,0,36,1) 0%,rgba(9,9,121,1) 25%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 75%, rgba(2,0,36,1) 100%);
     -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
     background-clip: text;
-    /* background: linear-gradient(60deg, rgba(0,212,255,1) 20%, rgba(9,9,121,1) 80%, rgba(2,0,36,1) 100%); */
-    /* -webkit-text-stroke: 0.5px #ffffff; */
 }
 
 .sombra-mobile {
-    text-shadow: 0px 0px 50px rgba(255, 255, 255, 1);
+    text-shadow: 0em 0em 50px rgba(255, 255, 255, 1);
 }
 
 #FRASE {
     font-family: 'blackswordregular', sans-serif;
-    font-size: 33px;
+    /* font-size: 2.06em; */
+    font-size: 2.06em;
     text-align: center;
-    padding: .5em;
+    padding: 0.56em;
     box-sizing: border-box;
 }
+
+/* #FRASE h2 {
+    font-size: 1.5em;
+} */
 
 /* SOBRE MI */
 #SOBRE-MI {
@@ -484,39 +498,40 @@ header {
 
 #MODULO2 .blanco h3 {
     padding: 0em 0.7em;
-    margin: 0 0 1.45rem;
-    font-size: 1.7rem;
+    margin: 0 0 1.45em;
+    font-size: 1.7em;
     font-family: Raleway;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 #MODULO2 .blanco p {
     padding: 0em 1em;
-    margin: 0 0 1.45rem;
-    font-size: 1.2rem;
+    margin: 0em 0em;
+    font-size: 1.2em;
     font-family: Raleway;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
-.history {
-    padding: 5px 0;
+#MODULO2 .blanco ul li {
+    font-size: 1.2em;
 }
 
-#PERFIL {
-    position: relative;
+#PERFIL-SERVICIOS {
+    box-sizing: border-box;
+    padding-left: 2em;
 }
 
 .img_about_me {
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    /* margin: auto; */
     display: block; /*ayuda a centrar con los margenes*/
     justify-content: center;
     transition: width 0.8s;
 }
 
-.img_about_me:hover {
+/* .img_about_me:hover {
     width: 100%;
-}
+} */
 
 /* PORTAFOLIO */
 
@@ -530,13 +545,13 @@ header {
     color: #ffffff;
     text-align: center;
     font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
-    font-size: 70px;
+    font-size: 4.38em;
     margin-block-start: 0em;
 }
 
 .containerpad100 {
     height: auto;
-    padding: 0px 100px;
+    padding: 0em 6.25em;
     box-sizing: border-box;
     width: 100%;
     display: flex;
@@ -544,15 +559,15 @@ header {
 }
 
 .borde-padding {
-    padding: 20px;
+    padding: 2em;
     box-sizing: border-box;
     display: flex;
 }
 
 .caja_proy {
-    border: 1px solid #ddd;
+    border: 0.06em solid #ddd;
     border-image: linear-gradient(to top, #00d4ff, rgba(0, 212, 255, 0.23)) 3 3;
-    padding-bottom: 5px;
+    padding: 0.5em;
     box-sizing: border-box;
 }
 
@@ -560,16 +575,12 @@ header {
     text-align: left;
 }
 
-.parrafo_proy {
-    text-align: justify;
-}
-
 .img_url {
-    height: 18px;
+    height: 1.13em;
 }
 
 .img_proy {
-    height: 159px;
+    height: 10em;
     float: left;
 }
 
@@ -578,7 +589,7 @@ header {
 }
 
 .top0 {
-    margin: 0px 5px 5px 0px;
+    margin: 0em 0.31em 0.31em 0em;
 }
 
 #LINKS {
@@ -587,17 +598,17 @@ header {
 
 .outpoint {
     list-style-type: none;
-    padding: 0px; 
-    margin: 0px;
+    padding: 0em; 
+    margin: 0em;
 }
 
 .outpoint li a {
     color: #fff;
     font-family: 'Raleway', Arial, Helvetica;
-    font-size: 15px;
+    font-size: 0.94em;
     font-weight: bolder;
     text-decoration: none;
-    padding: 1px 5px;
+    padding: 0.06em 0.31em;
     text-align: center;
     background: linear-gradient(11deg, rgba(9,9,121,1) 0%, rgba(9,9,121,1) 20%, rgba(6,85,171,1) 35%, rgba(0,212,255,1) 50%, rgba(6,85,171,1) 65%, rgba(9,9,121,1) 80%, rgba(9,9,121,1) 100%);
     border-bottom: 3px solid #0045a6;
@@ -624,7 +635,7 @@ header {
 
 /* HABILIDADES*/
 .img_skill {
-    height: 125px;
+    height: 100px;
 }
 
 .img-centrada{
@@ -646,15 +657,15 @@ header {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    padding: 10px 0px;
+    padding: 0.63em 0em;
 }
 
 .margen20{
-    margin: 0px 10px;
+    margin: 0em 0.63em;
 }
 
 .img_pie {
-    height: 32px;
+    height: 2em;
 }
 
 
@@ -662,27 +673,31 @@ header {
     :root{scroll-behavior:smooth}
 }
 
-@media all and (max-width: 1199px) {
-    .img_skill {
-        height: 100px;
+@media all and (max-width: 1123px) {
+    #YO {
+        padding-top: 3em;
     }
-
     #SOY_YO {
-        padding-left: 1em;
-        font-size: 31px;
+        line-height: 150%;
     }
-
-    #FRASE {
-        font-size: 31px;
-    }
-
-    .img_presentacion {
-        height: 490px;
-    }
-
-} /*fin de media 1199px*/
+} /*fin de media 1123px*/
 
 @media all and (max-width: 1080px) {
+    .content-border0 .content-border1 nav ul li a{
+        padding: 0.75em 1.48em;
+    }
+    .content-border0 .content-border1 nav ul li a:hover{
+        padding: 0.75em 1.24em;
+    }
+
+    #diploma {
+        padding: 0.17em 1.34em;
+    }
+
+    #diploma:hover {
+        padding: 0.17em 1.02em;
+    }
+
     .lightbox-contenedor {
         min-width: calc(100vw * 0.9);
     }
@@ -691,47 +706,119 @@ header {
         min-height: auto;
         min-width: calc(100vw * 0.9);
     }
-    
 }
 
 @media all and (max-width: 991px) {
+    .content-border0 .content-border1 nav ul li a{
+        padding: 0.75em 0.68em;
+    }
+
+    .content-border0 .content-border1 nav ul li a:hover{
+        padding: 0.75em 0.48em;
+    }
+
+    #diploma {
+        padding: 0.17em 0.54em;
+    }
+
+    #diploma:hover {
+        padding: 0.17em 0.22em;
+    }
+
     .img_skill {
         height: 80px;
-    }
-
-    #SOY_YO {
-        font-size: 28px;
-    }
-    
-    #FRASE {
-        font-size: 28px;
-    }
-
-    .img_presentacion {
-        height: 520px;
-    }
-
-} /*fin de media 991px*/
-
-@media all and (max-width: 872px) {
-    #SOY_YO {
-        line-height: 150%;
     }
 } /*fin de media 991px*/
 
 @media all and (max-width: 790px) {
+    .content-border0 .content-border1 nav ul li a{
+        padding: 0.75em 0.63em;
+    }
+
+    .content-border0 .content-border1 nav ul li a:hover{
+        padding: 0.75em 0.43em;
+    }
+
+    #diploma {
+        padding: 0.17em 0.49em;
+    }
+
+    #diploma:hover {
+        padding: 0.17em 0.17em;
+    }
+
     .img_presentacion {
         height: 496px;
+    }
+} /*fin de media 790px*/
+
+@media (max-width: 767px) { /* Estilos para tabletas */
+    body {
+      font-size: 14px;
     }
 } /*fin de media 767px*/
 
 @media (max-width: 752px) {
+    .content-border0 .content-border1 nav ul li a{
+        padding: 0.75em 0.2em;
+    }
+
+    .content-border0 .content-border1 nav ul li a:hover{
+        padding: 0.75em 0em;
+    }
+
+    .content-border0 {
+        padding: 0.31em 0.06em;
+    }
+
+    #diploma {
+        padding: 0.17em 0.05em;
+    }
+
+    #diploma:hover {
+        padding: 0.17em 0em;
+    }
+
     #FOTOS, #PORTAFOLIO, #HABILIDADES {
         min-height: auto;
     }
 
+    /* .degradado-azul {
+        background: none;
+        -webkit-text-fill-color: #00d4ff;
+        color: #00d4ff;
+    } */
+
+}/*fin de media 752px*/
+
+@media all and (max-width: 575px) {
+    body {
+        font-size: 12px;
+    }
+
+    #diploma {
+        padding: 0.17em 1.34em;
+    }
+
+    #diploma:hover {
+        padding: 0.17em 1.02em;
+    }
+
+    .content-border0 {
+        display: none;
+
+    }
     header {
         border: none;
+    }
+
+    .container-encabezado {
+        justify-content: flex-end;
+        background-color: transparent;
+    }
+
+    .contenedor-hamburguesa {
+        display: flex;
     }
 
     .columna-hamburguesa {
@@ -748,15 +835,6 @@ header {
         visibility: visible;
     }
 
-    /* .degradado-azul {
-        background: none;
-        -webkit-text-fill-color: #00d4ff;
-        color: #00d4ff;
-    } */
-
-}/*fin de media 752px*/
-
-@media all and (max-width: 575px) {
     .containerpad100 {
         padding: 0px;
     }
@@ -776,4 +854,32 @@ header {
     .img_pie {
         height: 6vw;
     }
+
+    #PERFIL-SERVICIOS {
+        box-sizing: border-box;
+        padding: 0em 2em 2em ;
+    }
+
+    #MODULO2 .blanco p {
+        padding: 0em 1.6em;
+    }
+
+    #MODULO2 .blanco h3 {
+        text-align: justify;
+    }
+
+    #MODULO2 .blanco p {
+        text-align: justify;
+    }
+
+    .parrafo_proy {
+        text-align: justify;
+    }
 }/*fin de media 575px*/
+
+/* Estilos para dispositivos móviles */
+/* @media (max-width: 480px) { 
+    
+    
+}  */
+/*fin de media 480px*/

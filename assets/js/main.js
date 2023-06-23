@@ -1,34 +1,34 @@
 //DETECTAR SI ES MOBIL O TABLET
 const photoskill = document.querySelectorAll('.img_skill');
 const cabeceraMaestra = document.querySelector('.container-encabezado');
-const cabecera = document.querySelectorAll('.content-border0');
+let cabecera = document.querySelectorAll('.content-border0');
 const divhamburger = document.querySelector('.contenedor-hamburguesa');
 const textoAzulCelular = document.querySelectorAll('.degradado-azul');
-const calcularDistElementosHorizontales = (objetoHorizontal) => {
-  let sumHorizontal = 25;
-  for (const elementoHorizontal of objetoHorizontal) {
-    sumHorizontal += elementoHorizontal.clientWidth;
-  }
-  return sumHorizontal;
-};
-let distElementosHorizontales = calcularDistElementosHorizontales(cabecera);
-function aparecerMenuDesplegable() {
-  cabeceraMaestra.classList.add('hamburguesa-derecha');
-  divhamburger.classList.add('hamburguesa-visible');
-  let m = cabecera.length;
-  for (var k = 0; k < m; k++) {
-    cabecera[k].classList.add('menu-invisible');
-  };
-  console.log("aparecerMenuDesplegable");
-};
-function desapareceMenuDesplegable() {
-  cabeceraMaestra.classList.remove('hamburguesa-derecha');
-  divhamburger.classList.remove('hamburguesa-visible');
-  let n = cabecera.length;
-  for (var l = 0; l < n; l++) {
-    cabecera[l].classList.remove('menu-invisible');
-  }
-}
+// let calcularDistElementosHorizontales = (objetoHorizontal) => {
+//   let sumHorizontal = 25;
+//   for (const elementoHorizontal of objetoHorizontal) {
+//     sumHorizontal += elementoHorizontal.clientWidth;
+//   }
+//   return sumHorizontal;
+// };
+// let distElementosHorizontales = calcularDistElementosHorizontales(cabecera);
+// function aparecerMenuDesplegable() {
+//   cabeceraMaestra.classList.add('hamburguesa-derecha');
+//   divhamburger.classList.add('hamburguesa-visible');
+//   let m = cabecera.length;
+//   for (var k = 0; k < m; k++) {
+//     cabecera[k].classList.add('menu-invisible');
+//   };
+//   console.log("aparecerMenuDesplegable");
+// };
+// function desapareceMenuDesplegable() {
+//   cabeceraMaestra.classList.remove('hamburguesa-derecha');
+//   divhamburger.classList.remove('hamburguesa-visible');
+//   let n = cabecera.length;
+//   for (var l = 0; l < n; l++) {
+//     cabecera[l].classList.remove('menu-invisible');
+//   }
+// }
 function detectar () {
   const ua = navigator.userAgent;
   if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(ua)) {
@@ -54,14 +54,14 @@ if (dispositivo == "mobile" || dispositivo == "tablet") {
   };
 
 };
-window.addEventListener("load", (e) => {
-  if (distElementosHorizontales > window.innerWidth) {
-    console.log(distElementosHorizontales, window.innerWidth);
-    aparecerMenuDesplegable();
-  } else {
-    desapareceMenuDesplegable();
-  };
-});
+// window.addEventListener("load", (e) => {
+//   if (distElementosHorizontales > window.innerWidth) {
+//     console.log(distElementosHorizontales, window.innerWidth);
+//     aparecerMenuDesplegable();
+//   } else {
+//     desapareceMenuDesplegable();
+//   };
+// });
 //FIN DETECTAR SI ES MOBIL O TABLET
 
 //EFECTO SCROLL
